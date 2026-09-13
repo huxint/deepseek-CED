@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tiny-ced"
+version = "0.1.0"
+description = "A small, trainable causal encoder-decoder language model"
+requires-python = ">=3.14"
+dependencies = ["torch==2.10.0", "numpy>=2,<3"]
+
+[tool.setuptools.packages.find]
+include = ["ced*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py314"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "UP", "ANN", "B", "SIM"]
+ignore = ["ANN401"]
+
+[tool.pyright]
+include = ["ced", "scripts"]
+pythonVersion = "3.14"
+pythonPlatform = "Linux"
+typeCheckingMode = "standard"

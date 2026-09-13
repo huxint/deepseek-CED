@@ -1,0 +1,13 @@
+{
+  "vocab_size": 258,
+  "d_model": 192,
+  "n_heads": 6,
+  "n_kv_heads": 2,
+  "ffn_dim": 512,
+  "encoder_layers": 4,
+  "decoder_layers": 4,
+  "encoder_swa_only_layers": 1,
+  "decoder_kv_groups": 1,
+  "window_size": 128,
+  "max_seq_len": 1024
+}
